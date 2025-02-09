@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Live Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📺 YouTube Live Stream Dashboard</h1>
+
+        <div class="input-group">
+            <input type="text" id="youtube-link" placeholder="Enter YouTube Channel or Video Link">
+            <input type="password" id="api-key" placeholder="Enter your YouTube API Key">
+            <button onclick="startTracking()">🚀 Start Tracking</button>
+            <div id="error-message" class="error"></div>
+        </div>
+
+        <div class="dashboard">
+            <div class="live-metrics">
+                <div class="metric">
+                    <h2 id="subscriber-count">Subscribers: --</h2>
+                </div>
+                <div class="metric">
+                    <h2 id="like-count">Likes: --</h2>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>💰 Super Chats</h2>
+                <div id="superchat-list">No Super Chats yet.</div>
+            </div>
+
+            <div class="card">
+                <h2>👨‍💻 Members Joined</h2>
+                <div id="chat-container">Not any recent  .</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
